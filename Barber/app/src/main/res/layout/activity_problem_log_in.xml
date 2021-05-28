@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srlLoginProblem"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryDarkAlt">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:includeFontPadding="false"
+        android:visibility="invisible"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+    <ScrollView
+        android:id="@+id/scrollViewLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:backgroundTint="@color/colorPrimaryDarkAlt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDarkAlt"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Oops"
+                android:textColor="@color/colorSubs"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="We are sorry to hear that."
+                android:textColor="@color/colorSubs"
+                android:textSize="24dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                app:srcCompat="@drawable/email" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Please enter your email below. We will send you new verification email in order to activate your account."
+                android:textColor="@color/colorSubs"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:layout_height="40dp"
+                android:background="@drawable/backwithborder"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorSubs"
+                android:textColorHint="@color/colorSubs" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/callSendProblemLogIn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="30dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorFab"
+                android:onClick="callSendProblemLogIn"
+                android:text="Send"
+                app:icon="@drawable/send"
+                app:iconSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="30dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="If the problem persists, please do not hesitate to contact us at: "
+                android:textColor="@color/colorSubs"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/supportBtnMail"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:backgroundTint="@color/colorPrimaryDarkAlt"
+                android:onClick="problemLogInMailUs"
+                android:stateListAnimator="@null"
+                android:text="support@devteam.com"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#1A71CE" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="or give as a call on"
+                android:textColor="@color/colorSubs"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/phoneSupportBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:backgroundTint="@color/colorPrimaryDarkAlt"
+                android:onClick="supportPhoneClick"
+                android:stateListAnimator="@null"
+                android:text="99084676"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#1A71CE" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Our team is always happy to assist you anytime."
+                android:textColor="@color/colorSubs"
+                android:textSize="20dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

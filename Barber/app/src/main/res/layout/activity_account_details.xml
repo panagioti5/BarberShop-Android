@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srlAccountDetails"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryDarkAlt">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:elevation="10dp"
+        android:includeFontPadding="false"
+        android:visibility="invisible"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+    <ImageView
+        android:id="@+id/noInternetImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        app:layout_anchor="@+id/avi"
+        app:srcCompat="@drawable/no_internet" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ScrollView
+            android:id="@+id/scrollViewLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:backgroundTint="@color/colorPrimaryDarkAlt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDarkAlt"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Account Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSubs"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Name"
+                    android:textColor="@color/colorSubs"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nameRegister"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/backwithborder"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorSubs"
+                    android:textColorHint="@color/colorSubs" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Email"
+                    android:textColor="@color/colorSubs"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/emailRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorSubs"
+                    android:textColorHint="@color/colorSubs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Password"
+
+                    android:textColor="@color/colorSubs"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordSelector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorSubs"
+                    app:boxBackgroundColor="@color/colorPrimaryDarkAlt"
+                    app:passwordToggleDrawable="@drawable/show_password_selector"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@null">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/passwordRegister"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:ems="10"
+                        android:paddingLeft="10dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backwithborder"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/colorSubs"
+                        android:textColorHint="@color/colorSubs" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/colorSubs"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/phoneRegister"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:paddingLeft="10dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/backwithborder"
+                    android:inputType="phone"
+                    android:textColor="@color/colorSubs"
+                    android:textColorHint="@color/colorSubs" />
+
+                <CheckBox
+                    android:id="@+id/emailNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="0dp"
+                    android:buttonTint="@color/colorFab"
+                    android:text="Hear for us"
+                    android:textColor="@color/colorSubs"
+                    android:textDirection="rtl"
+                    android:textSize="22dp" />
+
+                <CheckBox
+                    android:id="@+id/acceptsNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:buttonTint="@color/colorFab"
+                    android:text="Receive Push Notifications"
+                    android:textColor="@color/colorSubs"
+                    android:textSize="22dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/proceedUpdateDetails"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="30dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorFab"
+                    android:onClick="proceedUpdateDetails"
+                    android:text="Update Details" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

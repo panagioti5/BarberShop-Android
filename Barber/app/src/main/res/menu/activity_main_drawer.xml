@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/favorites_menu"
+        android:title="Favorites">
+        <menu>
+            <item
+                android:id="@+id/favorites"
+                android:icon="@drawable/favorites"
+                android:title="@string/menu_favorites" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_nicosia"
+            android:icon="@drawable/letter_n"
+            android:title="@string/menu_nicosia" />
+        <item
+            android:id="@+id/nav_limassol"
+            android:icon="@drawable/letter_l"
+            android:title="@string/menu_limassol" />
+        <item
+            android:id="@+id/nav_larnaca"
+            android:icon="@drawable/letter_l"
+            android:title="@string/menu_larnaca" />
+        <item
+            android:id="@+id/nav_paphos"
+            android:icon="@drawable/letter_p"
+            android:title="@string/menu_paphos" />
+        <item
+            android:id="@+id/nav_ammochostos"
+            android:icon="@drawable/letter_a"
+            android:title="@string/menu_ammochostos" />
+    </group>
+
+
+    <item
+        android:id="@+id/navigation_subheader_account"
+        android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/sign_in"
+                android:title="@string/menu_login" />
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings"
+                android:title="@string/menu_settings" />
+            <item
+                android:id="@+id/nav_requests"
+                android:icon="@drawable/appointment"
+                android:title="@string/menu_requests" />
+
+            <item
+                android:id="@+id/nav_data_protection"
+                android:icon="@drawable/data_protection"
+                android:title="@string/data_protection" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/sign_out"
+                android:title="@string/menu_signout" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="Communicate">
+
+
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_contact" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate_icon"
+                android:title="@string/menu_rate" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/privacy_policy_icon"
+                android:title="@string/menu_privacy_policy" />
+        </menu>
+    </item>
+</menu>

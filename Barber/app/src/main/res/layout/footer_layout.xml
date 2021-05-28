@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="7dip"
+    android:paddingBottom="0dip"
+    android:backgroundTint="@color/colorPrimaryDarkAlt"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:backgroundTint="@color/colorPrimaryDarkAlt"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/seeAllServices"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/services_list"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="@color/colorTitles"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="seeAllServices"
+            android:text="See all Services" />
+
+    </LinearLayout>
+</LinearLayout>
