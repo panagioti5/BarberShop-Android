@@ -1,2 +1,0 @@
-# BarberProject
-BarberProject

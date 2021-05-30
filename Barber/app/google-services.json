@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:476469516793:android:2aa24f96b29bdc3550c528",
         "android_client_info": {
-          "package_name": "com.christov.coolnews"
+          "package_name": "com.barber.app"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "476469516793-8fki02fr0uvmejv8tfvic639hdg6ea30.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.christov.coolnews",
+            "package_name": "com.barber.app",
             "certificate_hash": "ca9059962c69efa9ec40485994e4f9e5bac08e0f"
           }
         },

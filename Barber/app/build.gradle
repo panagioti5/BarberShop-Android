@@ -4,7 +4,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.christov.coolnews"
+        applicationId "com.barber.app"
         minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
